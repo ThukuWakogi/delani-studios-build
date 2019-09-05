@@ -1,0 +1,222 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("./fonts/Noto_Sans/NotoSans-Regular.ttf")
+}
+
+@font-face {
+  font-family: NotoSansRegularItalic;
+  src: url("./fonts/Noto_Sans/NotoSans-RegularItalic.ttf")
+}
+
+@font-face {
+  font-family: NotosansBold;
+  src: url("./fonts/Noto_Sans/NotoSans-Bold.ttf")
+}
+
+html, body, section {
+  font-family: NotoSansRegular;
+  font-weight: 100;
+  width: 100%;
+  height: 100%;
+}
+
+#sec-1 {
+  background-image: url("./assets/backgrounds/h_img.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sec-1 > img {
+  position: absolute;
+  top: 90%
+}
+
+#sec-1-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+#sec-1-contents > h1 {
+  font-size: 50px;
+}
+
+#sec-1-contents > h6 {
+  margin-top: 14px;
+}
+
+#sec-1-contents > img {
+  margin-bottom: 14px;
+}
+
+#logo {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 15px;
+}
+
+#sec-2, #sec-3, #portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+#sec-2 > div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+#sec-2 > div > h3, #sec-3 > div > h3, #portfolio > div > h3, #form > h3 {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-size: 34px;
+  letter-spacing: 9px;
+}
+
+#about-us, #sec-3, #portfolio, footer {
+  background-color: #eff0e0;
+  color: #3c3c3c;
+}
+
+#services {
+  background-image: url("./assets/backgrounds/s_image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff
+}
+
+#what-we-do-title, #portfolio-title {
+  height: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#sec-3 > div {
+  text-align: center;
+}
+
+#what-we-do-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-grow: 1;
+}
+
+#what-we-do-content > div {
+  margin: 20px;
+}
+
+#what-we-do-content > div > h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 27px 0px 35px 0px;
+}
+
+#what-we-do-content > div > p {
+  font-size: 14px;
+}
+
+#what-we-do-content > div > img {
+  width: 83px;
+  height: 83px;
+}
+
+#portfolio, #contact-us {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#portfolio-content, footer {
+  flex-grow: 1;
+}
+
+#portfolio-content > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 13px;
+  grid-row-gap: 5px;
+  height: 100%;
+  padding: 0px 105px;
+}
+
+#portfolio-content > div > img {
+  height: 85%;
+  margin: 0px auto;
+}
+
+#form {
+  height: 70%;
+  background-image: url("./assets/backgrounds/c_image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff
+}
+
+#form > h3 {
+  margin-top: 43px;
+}
+
+form {
+  width: 940px;
+  margin: auto;
+  height: 100%;
+}
+
+form > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+form > div > input {
+  height: 58px;
+  width: 41%;
+  background: #ffffff00;
+  border: 2px solid #fefefe;
+  color: #fefefe;
+}
+
+form > div > input::placeholder, textarea::placeholder {
+  color: #ffffffc7;
+  margin: 5px;
+  font-family: NotoSansRegularItalic;
+  padding: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 36%;
+  background: #ffffff00;
+  border: 2px solid #fefefe;
+  color: #fefefe;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+footer > div > img {
+  margin: 0px 5px;
+}
